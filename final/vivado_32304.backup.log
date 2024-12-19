@@ -1,0 +1,1428 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Nov 21 21:54:16 2024
+# Process ID: 32304
+# Current directory: C:/Users/f2663/Desktop/385final/final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8276 C:\Users\f2663\Desktop\385final\final\final.xpr
+# Log file: C:/Users/f2663/Desktop/385final/final/vivado.log
+# Journal file: C:/Users/f2663/Desktop/385final/final\vivado.jou
+# Running On: stephencao, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16780 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/f2663/Desktop/385final/final/final.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/f2663/Desktop/ece385/Lab6/RD_hdmi_ip2020/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vitis/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1868.473 ; gain = 291.988
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_usb/mb_usb.bd}
+Reading block design file <C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_usb/mb_usb.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio_usb_rst
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio_usb_int
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio_usb_keycode
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer_usb_axi
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - spi_usb
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <mb_usb> from block design file <C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_usb/mb_usb.bd>
+open_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1892.773 ; gain = 4.625
+open_bd_design {C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_block/mb_block.bd}
+Reading block design file <C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_block/mb_block.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio_usb_rst
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio_usb_int
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - gpio_usb_keycode
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - timer_usb_axi
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - spi_usb
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'C_S_AXI4_ID_WIDTH' of cell '/spi_usb' is ignored
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <mb_block> from block design file <C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_block/mb_block.bd>
+open_bd_design {C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_block/mb_block.bd}
+open_bd_design {C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_usb/mb_usb.bd}
+open_bd_design {C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_usb/mb_usb.bd}
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Vitis/Vivado/2022.2/data/embeddedsw) loading 1 seconds
+ERROR: [Common 17-69] Command failed: Unable to get BIT file from implementation run. Please ensure implementation has been run all the way through Bitstream generation. Aborting write_hw_platform..
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 21 21:59:42 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Nov 21 21:59:42 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+file mkdir C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new
+close [ open C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player.sv w ]
+add_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/mb_block_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/mb_block_wrapper.v
+export_ip_user_files -of_objects  [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/design_source/mb_intro_top.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/design_source/mb_intro_top.sv
+export_ip_user_files -of_objects  [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_block/mb_block.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_block/mb_block.bd
+Wrote  : <C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_block/ui/bd_d3042d03.ui> 
+open_bd_design {C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_usb/mb_usb.bd}
+close [ open C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player2.sv w ]
+add_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player2.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 21 22:27:15 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Nov 21 22:27:15 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 21 22:37:29 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Nov 21 22:37:29 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 21 22:39:38 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Nov 21 22:39:38 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_usb/mb_usb.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7s50csga324-1
+Top: mb_usb_hdmi_top
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vitis/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2984.359 ; gain = 385.523
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_hdmi_top' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'hex_driver' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:936]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_axi_uartlite_0_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_axi_uartlite_0_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_clk_wiz_1_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_clk_wiz_1_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_gpio_usb_int_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_int_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_gpio_usb_int_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_int_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_gpio_usb_keycode_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_keycode_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_gpio_usb_keycode_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_keycode_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_gpio_usb_rst_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_rst_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_gpio_usb_rst_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_rst_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_mdm_1_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_mdm_1_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_axi_intc_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_axi_intc_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_axi_periph_0' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CNVJ1L' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CNVJ1L' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_ADY9K' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_ADY9K' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_BB516Y' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_BB516Y' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:276]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_11D4JQ3' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:408]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_11D4JQ3' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:408]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_Y7VWKU' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:540]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_Y7VWKU' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:540]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1N5X0ZJ' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:672]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1N5X0ZJ' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:672]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1Y6O2J1' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:804]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1Y6O2J1' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:804]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_16FJ1YW' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2926]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_16FJ1YW' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2926]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_xbar_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_xbar_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_xbar_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_usb_xbar_0' is unconnected for instance 'xbar' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2651]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_usb_xbar_0' is unconnected for instance 'xbar' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2651]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'mb_usb_xbar_0' has 40 connections declared, but only 38 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2651]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_axi_periph_0' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_4XV58R' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2692]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_dlmb_bram_if_cntlr_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_dlmb_v10_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_dlmb_v10_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_dlmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_usb_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2838]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_usb_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2838]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_ilmb_bram_if_cntlr_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_ilmb_v10_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_ilmb_v10_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_ilmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_usb_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2884]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_usb_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2884]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_lmb_bram_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_lmb_bram_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_lmb_bram_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_usb_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2909]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_usb_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2909]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_usb_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2909]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_4XV58R' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2692]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_rst_clk_wiz_1_100M_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_rst_clk_wiz_1_100M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_usb_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1532]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_usb_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1532]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_usb_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1532]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_spi_usb_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_spi_usb_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_spi_usb_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_spi_usb_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_usb_spi_usb_0' has 33 connections declared, but only 28 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_timer_usb_axi_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_timer_usb_axi_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_timer_usb_axi_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_timer_usb_axi_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_usb_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1570]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_usb_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1570]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_usb_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1570]
+WARNING: [Synth 8-7023] instance 'timer_usb_axi' of module 'mb_usb_timer_usb_axi_0' has 26 connections declared, but only 23 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1570]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_xlconcat_0_0' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_xlconcat_0_0/synth/mb_usb_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_xlconcat_0_0' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_xlconcat_0_0/synth/mb_usb_xlconcat_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:936]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:97]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:97]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ball' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/ball.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/ball.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'Player' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Player' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Player2' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Player2' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'color_mapper' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/Color_Mapper.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'color_mapper' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/Color_Mapper.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_hdmi_top' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:14]
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 3090.609 ; gain = 491.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 3108.500 ; gain = 509.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 3108.500 ; gain = 509.664
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0.dcp' for cell 'vga_to_hdmi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0.dcp' for cell 'mb_usb_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0.dcp' for cell 'mb_usb_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0.dcp' for cell 'mb_usb_i/gpio_usb_int'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0.dcp' for cell 'mb_usb_i/gpio_usb_keycode'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0.dcp' for cell 'mb_usb_i/gpio_usb_rst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_mdm_1_0/mb_usb_mdm_1_0.dcp' for cell 'mb_usb_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_0/mb_usb_microblaze_0_0.dcp' for cell 'mb_usb_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_axi_intc_0/mb_usb_microblaze_0_axi_intc_0.dcp' for cell 'mb_usb_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0.dcp' for cell 'mb_usb_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0.dcp' for cell 'mb_usb_i/spi_usb'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_timer_usb_axi_0/mb_usb_timer_usb_axi_0.dcp' for cell 'mb_usb_i/timer_usb_axi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_xbar_0/mb_usb_xbar_0.dcp' for cell 'mb_usb_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_dlmb_bram_if_cntlr_0/mb_usb_dlmb_bram_if_cntlr_0.dcp' for cell 'mb_usb_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_dlmb_v10_0/mb_usb_dlmb_v10_0.dcp' for cell 'mb_usb_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_ilmb_bram_if_cntlr_0/mb_usb_ilmb_bram_if_cntlr_0.dcp' for cell 'mb_usb_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_ilmb_v10_0/mb_usb_ilmb_v10_0.dcp' for cell 'mb_usb_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_lmb_bram_0/mb_usb_lmb_bram_0.dcp' for cell 'mb_usb_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 3134.855 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 376 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+CRITICAL WARNING: [Shape Builder 18-119] Failed to create I/OLOGIC Route Through shape for instance mb_usb_i/clk_wiz_1/inst/clkin1_ibufg. Found overlapping instances within the shape: clk_wiz/inst/clkin1_ibufg and mb_usb_i/clk_wiz_1/inst/clkin1_ibufg.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_0/mb_usb_microblaze_0_0.xdc] for cell 'mb_usb_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_0/mb_usb_microblaze_0_0.xdc] for cell 'mb_usb_i/microblaze_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_0/mb_usb_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_axi_intc_0/mb_usb_microblaze_0_axi_intc_0.xdc] for cell 'mb_usb_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_axi_intc_0/mb_usb_microblaze_0_axi_intc_0.xdc] for cell 'mb_usb_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0_board.xdc] for cell 'mb_usb_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0_board.xdc] for cell 'mb_usb_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0.xdc] for cell 'mb_usb_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0.xdc] for cell 'mb_usb_i/clk_wiz_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0_board.xdc] for cell 'mb_usb_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0_board.xdc] for cell 'mb_usb_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0.xdc] for cell 'mb_usb_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0.xdc] for cell 'mb_usb_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0_board.xdc] for cell 'mb_usb_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0_board.xdc] for cell 'mb_usb_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0.xdc] for cell 'mb_usb_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0.xdc] for cell 'mb_usb_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0_board.xdc] for cell 'mb_usb_i/gpio_usb_rst/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0_board.xdc] for cell 'mb_usb_i/gpio_usb_rst/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0.xdc] for cell 'mb_usb_i/gpio_usb_rst/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0.xdc] for cell 'mb_usb_i/gpio_usb_rst/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0_board.xdc] for cell 'mb_usb_i/gpio_usb_int/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0_board.xdc] for cell 'mb_usb_i/gpio_usb_int/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0.xdc] for cell 'mb_usb_i/gpio_usb_int/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0.xdc] for cell 'mb_usb_i/gpio_usb_int/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0_board.xdc] for cell 'mb_usb_i/gpio_usb_keycode/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0_board.xdc] for cell 'mb_usb_i/gpio_usb_keycode/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0.xdc] for cell 'mb_usb_i/gpio_usb_keycode/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0.xdc] for cell 'mb_usb_i/gpio_usb_keycode/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_timer_usb_axi_0/mb_usb_timer_usb_axi_0.xdc] for cell 'mb_usb_i/timer_usb_axi/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_timer_usb_axi_0/mb_usb_timer_usb_axi_0.xdc] for cell 'mb_usb_i/timer_usb_axi/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0_board.xdc] for cell 'mb_usb_i/spi_usb/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0_board.xdc] for cell 'mb_usb_i/spi_usb/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0.xdc] for cell 'mb_usb_i/spi_usb/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0.xdc] for cell 'mb_usb_i/spi_usb/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz/inst'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz/inst'
+WARNING: [Constraints 18-619] A clock with name 'Clk' already exists, overwriting the previous clock with the same name. [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'rgb0[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'rgb0[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'rgb0[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'rgb1[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'rgb1[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'rgb1[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'd0_an[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'd0_an[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'd0_an[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'd0_an[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[4]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[5]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[6]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[7]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'd1_an[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'd1_an[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'd1_an[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'd1_an[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[4]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[5]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[6]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[7]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'uart_rxd'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'uart_txd'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_n'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_p'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'spkl'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'spkr'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_tx'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_rx'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_rts'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_cts'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'servo0'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'servo1'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'servo2'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'servo3'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:118]
+Finished Parsing XDC File [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_2_provided/pin_assignment/mb_usb_hdmi_top.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'clk_100' completely overrides clock 'Clk'.
+New: create_clock -period 10.000 -name clk_100 -waveform {0.000 5.000} [get_ports Clk], [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_2_provided/pin_assignment/mb_usb_hdmi_top.xdc:1]
+Previous: create_clock -period 10.000 [get_ports Clk], [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port Clk can not be placed on PACKAGE_PIN N15 because the PACKAGE_PIN is occupied by port Clk [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_2_provided/pin_assignment/mb_usb_hdmi_top.xdc:7]
+Finished Parsing XDC File [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_2_provided/pin_assignment/mb_usb_hdmi_top.xdc]
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_axi_intc_0/mb_usb_microblaze_0_axi_intc_0_clocks.xdc] for cell 'mb_usb_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_axi_intc_0/mb_usb_microblaze_0_axi_intc_0_clocks.xdc] for cell 'mb_usb_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_mdm_1_0/mb_usb_mdm_1_0.xdc] for cell 'mb_usb_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_mdm_1_0/mb_usb_mdm_1_0.xdc] for cell 'mb_usb_i/mdm_1/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_mdm_1_0/mb_usb_mdm_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0_clocks.xdc] for cell 'mb_usb_i/spi_usb/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0_clocks.xdc] for cell 'mb_usb_i/spi_usb/U0'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 14 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3176.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 247 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 145 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 68 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 3281.664 ; gain = 682.828
+130 Infos, 222 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 3281.664 ; gain = 870.359
+close [ open C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player2.sv w ]
+add_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player2.sv
+close [ open C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player1.sv w ]
+add_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player1.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 21 23:03:51 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Nov 21 23:03:51 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_usb/mb_usb.bd]
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vitis/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 3356.441 ; gain = 69.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_hdmi_top' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'hex_driver' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:936]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_axi_uartlite_0_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_axi_uartlite_0_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_clk_wiz_1_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_clk_wiz_1_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_gpio_usb_int_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_int_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_gpio_usb_int_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_int_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_gpio_usb_keycode_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_keycode_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_gpio_usb_keycode_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_keycode_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_gpio_usb_rst_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_rst_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_gpio_usb_rst_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_gpio_usb_rst_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_mdm_1_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_mdm_1_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_axi_intc_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_axi_intc_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_microblaze_0_axi_periph_0' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CNVJ1L' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CNVJ1L' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_ADY9K' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_ADY9K' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_BB516Y' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_BB516Y' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:276]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_11D4JQ3' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:408]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_11D4JQ3' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:408]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_Y7VWKU' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:540]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_Y7VWKU' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:540]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1N5X0ZJ' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:672]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1N5X0ZJ' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:672]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1Y6O2J1' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:804]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1Y6O2J1' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:804]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_16FJ1YW' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2926]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_16FJ1YW' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2926]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_xbar_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_xbar_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_xbar_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_usb_xbar_0' is unconnected for instance 'xbar' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2651]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_usb_xbar_0' is unconnected for instance 'xbar' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2651]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'mb_usb_xbar_0' has 40 connections declared, but only 38 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2651]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_microblaze_0_axi_periph_0' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_4XV58R' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2692]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_dlmb_bram_if_cntlr_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_dlmb_v10_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_dlmb_v10_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_dlmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_usb_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2838]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_usb_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2838]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_ilmb_bram_if_cntlr_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_ilmb_v10_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_ilmb_v10_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_ilmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_usb_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2884]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_usb_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2884]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_lmb_bram_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_lmb_bram_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_lmb_bram_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_usb_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2909]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_usb_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2909]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_usb_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2909]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_4XV58R' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:2692]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_rst_clk_wiz_1_100M_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_rst_clk_wiz_1_100M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_usb_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1532]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_usb_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1532]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_usb_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1532]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_spi_usb_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_spi_usb_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_spi_usb_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_spi_usb_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_usb_spi_usb_0' is unconnected for instance 'spi_usb' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_usb_spi_usb_0' has 33 connections declared, but only 28 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1541]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_timer_usb_axi_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_timer_usb_axi_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_timer_usb_axi_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/mb_usb_timer_usb_axi_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_usb_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1570]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_usb_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1570]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_usb_timer_usb_axi_0' is unconnected for instance 'timer_usb_axi' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1570]
+WARNING: [Synth 8-7023] instance 'timer_usb_axi' of module 'mb_usb_timer_usb_axi_0' has 26 connections declared, but only 23 given [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:1570]
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_xlconcat_0_0' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_xlconcat_0_0/synth/mb_usb_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_xlconcat_0_0' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_xlconcat_0_0/synth/mb_usb_xlconcat_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb' (0#1) [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/synth/mb_usb.v:936]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:99]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:99]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/f2663/Desktop/385final/final/.Xil/Vivado-32304-stephencao/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ball' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/ball.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/ball.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'Player' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Player' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Player2' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Player2' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Player2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'color_mapper' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/Color_Mapper.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'color_mapper' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/Color_Mapper.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'Color_Mapper_Player1' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player1.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Color_Mapper_Player1' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player1.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Color_Mapper_Player2' [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Color_Mapper_Player2' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_hdmi_top' (0#1) [C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/imports/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:14]
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 3458.426 ; gain = 171.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 3482.293 ; gain = 195.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 3482.293 ; gain = 195.184
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0.dcp' for cell 'vga_to_hdmi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0.dcp' for cell 'mb_usb_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0.dcp' for cell 'mb_usb_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0.dcp' for cell 'mb_usb_i/gpio_usb_int'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0.dcp' for cell 'mb_usb_i/gpio_usb_keycode'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0.dcp' for cell 'mb_usb_i/gpio_usb_rst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_mdm_1_0/mb_usb_mdm_1_0.dcp' for cell 'mb_usb_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_0/mb_usb_microblaze_0_0.dcp' for cell 'mb_usb_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_axi_intc_0/mb_usb_microblaze_0_axi_intc_0.dcp' for cell 'mb_usb_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0.dcp' for cell 'mb_usb_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0.dcp' for cell 'mb_usb_i/spi_usb'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_timer_usb_axi_0/mb_usb_timer_usb_axi_0.dcp' for cell 'mb_usb_i/timer_usb_axi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_xbar_0/mb_usb_xbar_0.dcp' for cell 'mb_usb_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_dlmb_bram_if_cntlr_0/mb_usb_dlmb_bram_if_cntlr_0.dcp' for cell 'mb_usb_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_dlmb_v10_0/mb_usb_dlmb_v10_0.dcp' for cell 'mb_usb_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_ilmb_bram_if_cntlr_0/mb_usb_ilmb_bram_if_cntlr_0.dcp' for cell 'mb_usb_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_ilmb_v10_0/mb_usb_ilmb_v10_0.dcp' for cell 'mb_usb_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_lmb_bram_0/mb_usb_lmb_bram_0.dcp' for cell 'mb_usb_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 3504.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 376 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+CRITICAL WARNING: [Shape Builder 18-119] Failed to create I/OLOGIC Route Through shape for instance mb_usb_i/clk_wiz_1/inst/clkin1_ibufg. Found overlapping instances within the shape: clk_wiz/inst/clkin1_ibufg and mb_usb_i/clk_wiz_1/inst/clkin1_ibufg.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_0/mb_usb_microblaze_0_0.xdc] for cell 'mb_usb_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_0/mb_usb_microblaze_0_0.xdc] for cell 'mb_usb_i/microblaze_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_0/mb_usb_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_axi_intc_0/mb_usb_microblaze_0_axi_intc_0.xdc] for cell 'mb_usb_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_axi_intc_0/mb_usb_microblaze_0_axi_intc_0.xdc] for cell 'mb_usb_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0_board.xdc] for cell 'mb_usb_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0_board.xdc] for cell 'mb_usb_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0.xdc] for cell 'mb_usb_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0.xdc] for cell 'mb_usb_i/clk_wiz_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_clk_wiz_1_0/mb_usb_clk_wiz_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0_board.xdc] for cell 'mb_usb_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0_board.xdc] for cell 'mb_usb_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0.xdc] for cell 'mb_usb_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_rst_clk_wiz_1_100M_0/mb_usb_rst_clk_wiz_1_100M_0.xdc] for cell 'mb_usb_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0_board.xdc] for cell 'mb_usb_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0_board.xdc] for cell 'mb_usb_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0.xdc] for cell 'mb_usb_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_axi_uartlite_0_0/mb_usb_axi_uartlite_0_0.xdc] for cell 'mb_usb_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0_board.xdc] for cell 'mb_usb_i/gpio_usb_rst/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0_board.xdc] for cell 'mb_usb_i/gpio_usb_rst/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0.xdc] for cell 'mb_usb_i/gpio_usb_rst/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_rst_0/mb_usb_gpio_usb_rst_0.xdc] for cell 'mb_usb_i/gpio_usb_rst/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0_board.xdc] for cell 'mb_usb_i/gpio_usb_int/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0_board.xdc] for cell 'mb_usb_i/gpio_usb_int/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0.xdc] for cell 'mb_usb_i/gpio_usb_int/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_int_0/mb_usb_gpio_usb_int_0.xdc] for cell 'mb_usb_i/gpio_usb_int/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0_board.xdc] for cell 'mb_usb_i/gpio_usb_keycode/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0_board.xdc] for cell 'mb_usb_i/gpio_usb_keycode/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0.xdc] for cell 'mb_usb_i/gpio_usb_keycode/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_gpio_usb_keycode_0/mb_usb_gpio_usb_keycode_0.xdc] for cell 'mb_usb_i/gpio_usb_keycode/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_timer_usb_axi_0/mb_usb_timer_usb_axi_0.xdc] for cell 'mb_usb_i/timer_usb_axi/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_timer_usb_axi_0/mb_usb_timer_usb_axi_0.xdc] for cell 'mb_usb_i/timer_usb_axi/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0_board.xdc] for cell 'mb_usb_i/spi_usb/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0_board.xdc] for cell 'mb_usb_i/spi_usb/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0.xdc] for cell 'mb_usb_i/spi_usb/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0.xdc] for cell 'mb_usb_i/spi_usb/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz/inst'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz/inst'
+WARNING: [Constraints 18-619] A clock with name 'Clk' already exists, overwriting the previous clock with the same name. [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'rgb0[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'rgb0[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'rgb0[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'rgb1[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'rgb1[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'rgb1[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'd0_an[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'd0_an[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'd0_an[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'd0_an[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[4]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[5]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[6]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'd0_seg[7]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'd1_an[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'd1_an[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'd1_an[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'd1_an[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[3]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[4]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[5]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[6]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'd1_seg[7]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'uart_rxd'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'uart_txd'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_n'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_p'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[0]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[1]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[2]'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'spkl'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'spkr'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_tx'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_rx'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_rts'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_cts'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'servo0'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'servo1'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'servo2'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'servo3'. [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc:118]
+Finished Parsing XDC File [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_1_provided_fa_24/lab6_1_provided/pin_assignment/mb_intro_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_2_provided/pin_assignment/mb_usb_hdmi_top.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'clk_100' completely overrides clock 'Clk'.
+New: create_clock -period 10.000 -name clk_100 -waveform {0.000 5.000} [get_ports Clk], [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_2_provided/pin_assignment/mb_usb_hdmi_top.xdc:1]
+Previous: create_clock -period 10.000 [get_ports Clk], [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port Clk can not be placed on PACKAGE_PIN N15 because the PACKAGE_PIN is occupied by port Clk [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_2_provided/pin_assignment/mb_usb_hdmi_top.xdc:7]
+Finished Parsing XDC File [C:/Users/f2663/Desktop/385final/final/final.srcs/constrs_1/imports/lab6/lab6_2_provided/pin_assignment/mb_usb_hdmi_top.xdc]
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_axi_intc_0/mb_usb_microblaze_0_axi_intc_0_clocks.xdc] for cell 'mb_usb_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_axi_intc_0/mb_usb_microblaze_0_axi_intc_0_clocks.xdc] for cell 'mb_usb_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_mdm_1_0/mb_usb_mdm_1_0.xdc] for cell 'mb_usb_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_mdm_1_0/mb_usb_mdm_1_0.xdc] for cell 'mb_usb_i/mdm_1/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_mdm_1_0/mb_usb_mdm_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0_clocks.xdc] for cell 'mb_usb_i/spi_usb/U0'
+Finished Parsing XDC File [c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_spi_usb_0/mb_usb_spi_usb_0_clocks.xdc] for cell 'mb_usb_i/spi_usb/U0'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'rtl_1' [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: mb_usb_i/spi_usb/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vitis/Vivado/2022.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 14 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 3504.730 ; gain = 217.621
+export_ip_user_files -of_objects  [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player2.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player2.sv
+export_ip_user_files -of_objects  [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player1.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/Color_Mapper_Player1.sv
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 21 23:35:43 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Nov 21 23:35:43 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 21 23:40:55 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Nov 21 23:40:55 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 21 23:45:17 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Nov 21 23:45:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 21 23:56:09 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Nov 21 23:56:09 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 00:39:16 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 00:39:16 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run impl_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 10:13:12 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 10:13:12 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 11:01:45 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 11:01:45 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs synth_1 -jobs 8
+[Fri Nov 22 11:04:42 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri Nov 22 11:05:44 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 11:07:23 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 11:07:23 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 11:12:35 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 11:12:35 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/Image_to_COE/background_1/background_1.COE' provided. It will be converted relative to IP Instance files '../../../../../../Image_to_COE/background_1/background_1.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name background_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/Image_to_COE/background_1/background_1.COE} \
+  CONFIG.Component_Name {background_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {307200} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips background_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'background_rom' to 'background_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/Image_to_COE/background_1/background_1.COE' provided. It will be converted relative to IP Instance files '../../../../../../Image_to_COE/background_1/background_1.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/background_rom/background_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'background_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/background_rom/background_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'background_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'background_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'background_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'background_rom'...
+generate_target: Time (s): cpu = 00:00:34 ; elapsed = 00:01:36 . Memory (MB): peak = 3611.031 ; gain = 2.793
+catch { config_ip_cache -export [get_ips -all background_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: background_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/background_rom/background_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/background_rom/background_rom.xci]
+launch_runs background_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: background_rom
+[Fri Nov 22 11:29:20 2024] Launched background_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/background_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/background_rom/background_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/Image_to_COE/background_1/background_1_palette.sv C:/Users/f2663/Desktop/Image_to_COE/background_1/background_1_example.sv}
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 11:50:40 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 11:50:40 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 12:06:16 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 12:06:16 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 12:07:47 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 12:07:48 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 12:10:00 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+ERROR: [Common 17-69] Command failed: Unable to get BIT file from implementation run. Please ensure implementation has been run all the way through Bitstream generation. Aborting write_hw_platform..
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+ERROR: [Common 17-69] Command failed: Unable to get BIT file from implementation run. Please ensure implementation has been run all the way through Bitstream generation. Aborting write_hw_platform..
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 12:10:44 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/bd/mb_usb/mb_usb.bd}
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 12:48:31 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 12:48:31 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Nov 22 12:50:22 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 13:14:36 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 13:14:36 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 13:17:32 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 13:17:32 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 13:31:10 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 13:31:10 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 13:39:56 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 13:39:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/Image_to_COE/background_1/background_1.COE} \
+  CONFIG.Load_Init_File {true} \
+] [get_ips background_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/Image_to_COE/background_1/background_1.COE' provided. It will be converted relative to IP Instance files '../../../../../../Image_to_COE/background_1/background_1.COE'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 14:04:38 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 14:04:38 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Nov 22 14:13:31 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Fri Nov 22 14:13:31 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.184 . Memory (MB): peak = 3733.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 571 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Common 17-344] 'open_run' was cancelled
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 22 20:34:03 2024...

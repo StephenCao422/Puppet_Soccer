@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../final.gen/sources_1/ip/walk2_back_rom/sim/walk2_back_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

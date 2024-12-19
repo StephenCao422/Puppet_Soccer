@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec 12 20:23:22 2024
+# Process ID: 43916
+# Current directory: C:/Users/f2663/Desktop/385final/final/final.runs/run1_back_rom_synth_1
+# Command line: vivado.exe -log run1_back_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source run1_back_rom.tcl
+# Log file: C:/Users/f2663/Desktop/385final/final/final.runs/run1_back_rom_synth_1/run1_back_rom.vds
+# Journal file: C:/Users/f2663/Desktop/385final/final/final.runs/run1_back_rom_synth_1\vivado.jou
+# Running On: stephencao, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16780 MB
+#-----------------------------------------------------------
+source run1_back_rom.tcl -notrace

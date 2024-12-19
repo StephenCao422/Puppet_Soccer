@@ -1,0 +1,2 @@
+jump2_3_rom.v,verilog,xil_defaultlib,../../../../final.gen/sources_1/ip/jump2_3_rom/sim/jump2_3_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Move &apos;lw_usb_main.c&apos; to &apos;lw_usb&apos;" description="Move &apos;lw_usb_main.c&apos; to &apos;lw_usb&apos;" destination="src/lw_usb" element1="src/lw_usb_main.c" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1732248463376" updateReferences="true"/>&#x0A;<refactoring comment="Move &apos;lw_usb_main.c&apos; to &apos;src&apos;" description="Move &apos;lw_usb_main.c&apos; to &apos;src&apos;" destination="src" element1="src/lw_usb/lw_usb_main.c" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1732248489912" updateReferences="true"/>
+</session>

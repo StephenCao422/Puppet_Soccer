@@ -1,0 +1,2 @@
+back_rom.v,verilog,xil_defaultlib,../../../../final.gen/sources_1/ip/back_rom/sim/back_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

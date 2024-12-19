@@ -1,0 +1,634 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Dec 11 15:41:28 2024
+# Process ID: 40292
+# Current directory: C:/Users/f2663/Desktop/385final/final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17344 C:\Users\f2663\Desktop\385final\final\final.xpr
+# Log file: C:/Users/f2663/Desktop/385final/final/vivado.log
+# Journal file: C:/Users/f2663/Desktop/385final/final\vivado.jou
+# Running On: stephencao, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16780 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/f2663/Desktop/385final/final/final.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back.COE} \
+  CONFIG.Component_Name {back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {2788} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips back_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci]
+catch { config_ip_cache -export [get_ips -all back_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci]
+launch_runs back_rom_synth_1 -jobs 8
+wait_on_run back_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back_palette.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name run_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/run/run.COE} \
+  CONFIG.Component_Name {run_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {2788} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips run_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci]
+catch { config_ip_cache -export [get_ips -all run_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci]
+launch_runs run_rom_synth_1 -jobs 8
+wait_on_run run_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/run/run_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run/run_palette.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/player_1/player_1.COE} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Write_Depth_A {4000} \
+] [get_ips player1_rom]
+generate_target all [get_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player1_rom/player1_rom.xci]
+catch { config_ip_cache -export [get_ips -all player1_rom] }
+export_ip_user_files -of_objects [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player1_rom/player1_rom.xci] -no_script -sync -force -quiet
+reset_run player1_rom_synth_1
+launch_runs player1_rom_synth_1 -jobs 8
+wait_on_run player1_rom_synth_1
+export_simulation -of_objects [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player1_rom/player1_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/walk/walk.COE} \
+  CONFIG.Write_Depth_A {4000} \
+] [get_ips walk_rom]
+generate_target all [get_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk_rom/walk_rom.xci]
+catch { config_ip_cache -export [get_ips -all walk_rom] }
+export_ip_user_files -of_objects [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk_rom/walk_rom.xci] -no_script -sync -force -quiet
+reset_run walk_rom_synth_1
+launch_runs walk_rom_synth_1 -jobs 8
+wait_on_run walk_rom_synth_1
+export_simulation -of_objects [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk_rom/walk_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/run/run.COE} \
+  CONFIG.Write_Depth_A {4000} \
+] [get_ips run_rom]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci]
+catch { config_ip_cache -export [get_ips -all run_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci] -no_script -sync -force -quiet
+reset_run run_rom_synth_1
+launch_runs run_rom_synth_1 -jobs 8
+wait_on_run run_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back.COE} \
+  CONFIG.Write_Depth_A {4000} \
+] [get_ips back_rom]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci]
+catch { config_ip_cache -export [get_ips -all back_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci] -no_script -sync -force -quiet
+reset_run back_rom_synth_1
+launch_runs back_rom_synth_1 -jobs 8
+wait_on_run back_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name runf_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/runf/runf.COE} \
+  CONFIG.Component_Name {runf_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips runf_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf_rom/runf_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf_rom/runf_rom.xci]
+catch { config_ip_cache -export [get_ips -all runf_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf_rom/runf_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf_rom/runf_rom.xci]
+launch_runs runf_rom_synth_1 -jobs 8
+wait_on_run runf_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf_rom/runf_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/runf/runf_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf/runf_example.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name walk2_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2.COE} \
+  CONFIG.Component_Name {walk2_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips walk2_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci]
+catch { config_ip_cache -export [get_ips -all walk2_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci]
+launch_runs walk2_rom_synth_1 -jobs 8
+wait_on_run walk2_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2_example.sv}
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name run2_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/run2/run2.COE} \
+  CONFIG.Component_Name {run2_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips run2_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_rom/run2_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_rom/run2_rom.xci]
+catch { config_ip_cache -export [get_ips -all run2_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_rom/run2_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_rom/run2_rom.xci]
+launch_runs run2_rom_synth_1 -jobs 8
+wait_on_run run2_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_rom/run2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name runf2_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/runf2/runf2.COE} \
+  CONFIG.Component_Name {runf2_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips runf2_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_rom/runf2_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_rom/runf2_rom.xci]
+catch { config_ip_cache -export [get_ips -all runf2_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_rom/runf2_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_rom/runf2_rom.xci]
+launch_runs runf2_rom_synth_1 -jobs 8
+wait_on_run runf2_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_rom/runf2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/run2/run2_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run2/run2_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf2/runf2_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf2/runf2_palette.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name player_2_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/player_2_back/player_2_back.COE} \
+  CONFIG.Component_Name {player_2_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips player_2_back_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player_2_back_rom/player_2_back_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player_2_back_rom/player_2_back_rom.xci]
+catch { config_ip_cache -export [get_ips -all player_2_back_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player_2_back_rom/player_2_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player_2_back_rom/player_2_back_rom.xci]
+launch_runs player_2_back_rom_synth_1 -jobs 8
+wait_on_run player_2_back_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player_2_back_rom/player_2_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/player_2_back/player_2_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/player_2_back/player_2_back_example.sv}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+set_property CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2.COE} [get_ips walk2_rom]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci]
+catch { config_ip_cache -export [get_ips -all walk2_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci] -no_script -sync -force -quiet
+reset_run walk2_rom_synth_1
+launch_runs walk2_rom_synth_1 -jobs 8
+wait_on_run walk2_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name walk1_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/walk1_back/walk1_back.COE} \
+  CONFIG.Component_Name {walk1_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips walk1_back_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk1_back_rom/walk1_back_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk1_back_rom/walk1_back_rom.xci]
+catch { config_ip_cache -export [get_ips -all walk1_back_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk1_back_rom/walk1_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk1_back_rom/walk1_back_rom.xci]
+launch_runs walk1_back_rom_synth_1 -jobs 8
+wait_on_run walk1_back_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk1_back_rom/walk1_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name run1_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/run1_back/run1_back.COE} \
+  CONFIG.Component_Name {run1_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips run1_back_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run1_back_rom/run1_back_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run1_back_rom/run1_back_rom.xci]
+catch { config_ip_cache -export [get_ips -all run1_back_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run1_back_rom/run1_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run1_back_rom/run1_back_rom.xci]
+launch_runs run1_back_rom_synth_1 -jobs 8
+wait_on_run run1_back_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run1_back_rom/run1_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name runf1_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/runf1_back/runf1_back.COE} \
+  CONFIG.Component_Name {runf1_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips runf1_back_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf1_back_rom/runf1_back_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf1_back_rom/runf1_back_rom.xci]
+catch { config_ip_cache -export [get_ips -all runf1_back_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf1_back_rom/runf1_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf1_back_rom/runf1_back_rom.xci]
+launch_runs runf1_back_rom_synth_1 -jobs 8
+wait_on_run runf1_back_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf1_back_rom/runf1_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/walk1_back/walk1_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/walk1_back/walk1_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf1_back/runf1_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run1_back/run1_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf1_back/runf1_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run1_back/run1_back_example.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name walk2_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/walk2_back/walk2_back.COE} \
+  CONFIG.Component_Name {walk2_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips walk2_back_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_back_rom/walk2_back_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_back_rom/walk2_back_rom.xci]
+catch { config_ip_cache -export [get_ips -all walk2_back_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_back_rom/walk2_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_back_rom/walk2_back_rom.xci]
+launch_runs walk2_back_rom_synth_1 -jobs 8
+wait_on_run walk2_back_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_back_rom/walk2_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name run2_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/run2_back/run2_back.COE} \
+  CONFIG.Component_Name {run2_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips run2_back_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_back_rom/run2_back_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_back_rom/run2_back_rom.xci]
+catch { config_ip_cache -export [get_ips -all run2_back_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_back_rom/run2_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_back_rom/run2_back_rom.xci]
+launch_runs run2_back_rom_synth_1 -jobs 8
+wait_on_run run2_back_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_back_rom/run2_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name runf2_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/runf2_back/runf2_back.COE} \
+  CONFIG.Component_Name {runf2_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips runf2_back_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_back_rom/runf2_back_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_back_rom/runf2_back_rom.xci]
+catch { config_ip_cache -export [get_ips -all runf2_back_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_back_rom/runf2_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_back_rom/runf2_back_rom.xci]
+launch_runs runf2_back_rom_synth_1 -jobs 8
+wait_on_run runf2_back_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_back_rom/runf2_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/walk2_back/walk2_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/walk2_back/walk2_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf2_back/runf2_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf2_back/runf2_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run2_back/run2_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run2_back/run2_back_palette.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump1_1_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_1/jump1_1.COE} \
+  CONFIG.Component_Name {jump1_1_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump1_1_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_1_rom/jump1_1_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_1_rom/jump1_1_rom.xci]
+catch { config_ip_cache -export [get_ips -all jump1_1_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_1_rom/jump1_1_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_1_rom/jump1_1_rom.xci]
+launch_runs jump1_1_rom_synth_1 -jobs 8
+wait_on_run jump1_1_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_1_rom/jump1_1_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_1/jump1_1_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_1/jump1_1_palette.sv}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump1_2_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_2/jump1_2.COE} \
+  CONFIG.Component_Name {jump1_2_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump1_2_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_2_rom/jump1_2_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_2_rom/jump1_2_rom.xci]
+catch { config_ip_cache -export [get_ips -all jump1_2_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_2_rom/jump1_2_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_2_rom/jump1_2_rom.xci]
+launch_runs jump1_2_rom_synth_1 -jobs 8
+wait_on_run jump1_2_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_2_rom/jump1_2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_2/jump1_2_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_2/jump1_2_palette.sv}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump1_3_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_3/jump1_3.COE} \
+  CONFIG.Component_Name {jump1_3_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump1_3_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_3_rom/jump1_3_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_3_rom/jump1_3_rom.xci]
+catch { config_ip_cache -export [get_ips -all jump1_3_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_3_rom/jump1_3_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_3_rom/jump1_3_rom.xci]
+launch_runs jump1_3_rom_synth_1 -jobs 8
+wait_on_run jump1_3_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_3_rom/jump1_3_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_3/jump1_3_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_3/jump1_3_example.sv}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump2_1_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_1/jump2_1.COE} \
+  CONFIG.Component_Name {jump2_1_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump2_1_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_1_rom/jump2_1_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_1_rom/jump2_1_rom.xci]
+catch { config_ip_cache -export [get_ips -all jump2_1_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_1_rom/jump2_1_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_1_rom/jump2_1_rom.xci]
+launch_runs jump2_1_rom_synth_1 -jobs 8
+wait_on_run jump2_1_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_1_rom/jump2_1_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_1/jump2_1_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_1/jump2_1_palette.sv}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump2_2_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_2/jump2_2.COE} \
+  CONFIG.Component_Name {jump2_2_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump2_2_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_2_rom/jump2_2_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_2_rom/jump2_2_rom.xci]
+catch { config_ip_cache -export [get_ips -all jump2_2_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_2_rom/jump2_2_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_2_rom/jump2_2_rom.xci]
+launch_runs jump2_2_rom_synth_1 -jobs 8
+wait_on_run jump2_2_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_2_rom/jump2_2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_2/jump2_2_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_2/jump2_2_example.sv}
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump2_3_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_3/jump2_3.COE} \
+  CONFIG.Component_Name {jump2_3_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump2_3_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_3_rom/jump2_3_rom.xci]
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_3_rom/jump2_3_rom.xci]
+catch { config_ip_cache -export [get_ips -all jump2_3_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_3_rom/jump2_3_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_3_rom/jump2_3_rom.xci]
+launch_runs jump2_3_rom_synth_1 -jobs 8
+wait_on_run jump2_3_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_3_rom/jump2_3_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_3/jump2_3_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_3/jump2_3_palette.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa

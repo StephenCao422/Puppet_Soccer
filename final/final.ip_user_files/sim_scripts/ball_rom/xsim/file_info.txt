@@ -1,0 +1,2 @@
+ball_rom.v,verilog,xil_defaultlib,../../../../final.gen/sources_1/ip/ball_rom/sim/ball_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

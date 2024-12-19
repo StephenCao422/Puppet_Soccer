@@ -1,0 +1,1278 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Dec 11 15:41:28 2024
+# Process ID: 40292
+# Current directory: C:/Users/f2663/Desktop/385final/final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17344 C:\Users\f2663\Desktop\385final\final\final.xpr
+# Log file: C:/Users/f2663/Desktop/385final/final/vivado.log
+# Journal file: C:/Users/f2663/Desktop/385final/final\vivado.jou
+# Running On: stephencao, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16780 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/f2663/Desktop/385final/final/final.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Vitis/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/f2663/Desktop/ece385/Lab6/RD_hdmi_ip2020/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vitis/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1833.176 ; gain = 418.359
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 2218.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 699 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_wiz/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'mb_usb_i/clk_wiz_1/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.527 . Memory (MB): peak = 2836.754 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.527 . Memory (MB): peak = 2836.754 ; gain = 0.000
+Generating merged BMM file for the design top 'mb_usb_hdmi_top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/f2663/Desktop/385final/final/final.gen/sources_1/bd/mb_usb/ip/mb_usb_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2836.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 246 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 143 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 68 instances
+  SRLC16E => SRL16E: 1 instance 
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 2986.309 ; gain = 1114.082
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 17:09:07 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 17:09:07 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Vitis/Vivado/2022.2/data/embeddedsw) loading 0 seconds
+close_design
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 17:36:18 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 17:36:18 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 17:38:26 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 17:38:26 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 17:54:16 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 17:54:16 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 18:00:13 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 18:00:13 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/player_1_back/player_1_back.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back.COE} \
+  CONFIG.Component_Name {back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {2788} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips back_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'back_rom' to 'back_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/player_1_back/player_1_back.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'back_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'back_rom'...
+catch { config_ip_cache -export [get_ips -all back_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: back_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci]
+launch_runs back_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: back_rom
+[Wed Dec 11 18:16:58 2024] Launched back_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/back_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back_palette.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 18:23:19 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 18:23:19 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 18:47:50 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 18:47:50 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/f2663/Desktop/385final/final/final.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 18:48:17 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 18:48:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 19:07:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 19:07:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 19:27:43 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 19:27:43 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 21:13:07 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 21:13:07 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 21:51:58 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 21:51:58 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 22:01:05 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 22:01:05 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 22:15:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 22:15:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 22:26:03 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 22:26:03 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 22:33:12 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 22:33:12 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 11 22:37:48 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Wed Dec 11 22:37:48 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+ERROR: [Common 17-69] Command failed: Unable to get BIT file from implementation run. Please ensure implementation has been run all the way through Bitstream generation. Aborting write_hw_platform..
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/run/run.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/run/run.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name run_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/run/run.COE} \
+  CONFIG.Component_Name {run_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {2788} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips run_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'run_rom' to 'run_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/run/run.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/run/run.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'run_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'run_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'run_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'run_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'run_rom'...
+catch { config_ip_cache -export [get_ips -all run_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: run_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci]
+launch_runs run_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: run_rom
+[Thu Dec 12 00:45:17 2024] Launched run_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/run_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/run/run_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run/run_palette.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 00:51:04 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 00:51:04 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 01:00:05 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 01:00:32 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 01:00:32 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 01:07:29 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 01:07:29 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 01:22:35 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 01:22:35 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 01:27:13 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 01:27:13 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 01:28:19 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 01:28:19 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 01:34:12 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 01:34:12 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/player_1/player_1.COE} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Write_Depth_A {4000} \
+] [get_ips player1_rom]
+generate_target all [get_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player1_rom/player1_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'player1_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'player1_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'player1_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'player1_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'player1_rom'...
+catch { config_ip_cache -export [get_ips -all player1_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: player1_rom
+export_ip_user_files -of_objects [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player1_rom/player1_rom.xci] -no_script -sync -force -quiet
+reset_run player1_rom_synth_1
+launch_runs player1_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: player1_rom
+[Thu Dec 12 15:09:08 2024] Launched player1_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/player1_rom_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player1_rom/player1_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/walk/walk.COE} \
+  CONFIG.Write_Depth_A {4000} \
+] [get_ips walk_rom]
+generate_target all [get_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk_rom/walk_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'walk_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'walk_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'walk_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'walk_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'walk_rom'...
+catch { config_ip_cache -export [get_ips -all walk_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: walk_rom
+export_ip_user_files -of_objects [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk_rom/walk_rom.xci] -no_script -sync -force -quiet
+reset_run walk_rom_synth_1
+launch_runs walk_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: walk_rom
+[Thu Dec 12 15:12:26 2024] Launched walk_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/walk_rom_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk_rom/walk_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/run/run.COE} \
+  CONFIG.Write_Depth_A {4000} \
+] [get_ips run_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/run/run.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/run/run.COE'
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'run_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'run_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'run_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'run_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'run_rom'...
+catch { config_ip_cache -export [get_ips -all run_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: run_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci] -no_script -sync -force -quiet
+reset_run run_rom_synth_1
+launch_runs run_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: run_rom
+[Thu Dec 12 15:14:11 2024] Launched run_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/run_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run_rom/run_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 15:15:37 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 15:15:37 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 15:25:00 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 15:25:00 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back.COE} \
+  CONFIG.Write_Depth_A {4000} \
+] [get_ips back_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/player_1_back/player_1_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/player_1_back/player_1_back.COE'
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'back_rom'...
+catch { config_ip_cache -export [get_ips -all back_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: back_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci] -no_script -sync -force -quiet
+reset_run back_rom_synth_1
+launch_runs back_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: back_rom
+[Thu Dec 12 15:35:48 2024] Launched back_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/back_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/back_rom/back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/runf/runf.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/runf/runf.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name runf_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/runf/runf.COE} \
+  CONFIG.Component_Name {runf_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips runf_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'runf_rom' to 'runf_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/runf/runf.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/runf/runf.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf_rom/runf_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'runf_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf_rom/runf_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'runf_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'runf_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'runf_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'runf_rom'...
+catch { config_ip_cache -export [get_ips -all runf_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: runf_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf_rom/runf_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf_rom/runf_rom.xci]
+launch_runs runf_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: runf_rom
+[Thu Dec 12 15:45:49 2024] Launched runf_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/runf_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf_rom/runf_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/runf/runf_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf/runf_example.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 15:50:01 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 15:50:02 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/walk2/walk2.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name walk2_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2.COE} \
+  CONFIG.Component_Name {walk2_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips walk2_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'walk2_rom' to 'walk2_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/walk2/walk2.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'walk2_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'walk2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'walk2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'walk2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'walk2_rom'...
+catch { config_ip_cache -export [get_ips -all walk2_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: walk2_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci]
+launch_runs walk2_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: walk2_rom
+[Thu Dec 12 16:17:15 2024] Launched walk2_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/walk2_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2_example.sv}
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/run2/run2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/run2/run2.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name run2_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/run2/run2.COE} \
+  CONFIG.Component_Name {run2_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips run2_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'run2_rom' to 'run2_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/run2/run2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/run2/run2.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_rom/run2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'run2_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_rom/run2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'run2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'run2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'run2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'run2_rom'...
+catch { config_ip_cache -export [get_ips -all run2_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: run2_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_rom/run2_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_rom/run2_rom.xci]
+launch_runs run2_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: run2_rom
+[Thu Dec 12 16:18:45 2024] Launched run2_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/run2_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_rom/run2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/runf2/runf2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/runf2/runf2.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name runf2_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/runf2/runf2.COE} \
+  CONFIG.Component_Name {runf2_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips runf2_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'runf2_rom' to 'runf2_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/runf2/runf2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/runf2/runf2.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_rom/runf2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'runf2_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_rom/runf2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'runf2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'runf2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'runf2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'runf2_rom'...
+catch { config_ip_cache -export [get_ips -all runf2_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: runf2_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_rom/runf2_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_rom/runf2_rom.xci]
+launch_runs runf2_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: runf2_rom
+[Thu Dec 12 16:19:47 2024] Launched runf2_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/runf2_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_rom/runf2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/run2/run2_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run2/run2_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf2/runf2_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf2/runf2_palette.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/player_2_back/player_2_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/player_2_back/player_2_back.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name player_2_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/player_2_back/player_2_back.COE} \
+  CONFIG.Component_Name {player_2_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips player_2_back_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'player_2_back_rom' to 'player_2_back_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/player_2_back/player_2_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/player_2_back/player_2_back.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player_2_back_rom/player_2_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'player_2_back_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player_2_back_rom/player_2_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'player_2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'player_2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'player_2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'player_2_back_rom'...
+catch { config_ip_cache -export [get_ips -all player_2_back_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: player_2_back_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player_2_back_rom/player_2_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player_2_back_rom/player_2_back_rom.xci]
+launch_runs player_2_back_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: player_2_back_rom
+[Thu Dec 12 16:30:47 2024] Launched player_2_back_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/player_2_back_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/player_2_back_rom/player_2_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/player_2_back/player_2_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/player_2_back/player_2_back_example.sv}
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 17:04:35 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 17:04:35 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 17:11:37 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 17:11:37 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 17:27:16 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 17:27:16 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 17:43:19 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 17:43:20 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 18:00:42 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 18:00:42 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2.COE} [get_ips walk2_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/walk2/walk2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/walk2/walk2.COE'
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'walk2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'walk2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'walk2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'walk2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'walk2_rom'...
+catch { config_ip_cache -export [get_ips -all walk2_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: walk2_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci] -no_script -sync -force -quiet
+reset_run walk2_rom_synth_1
+launch_runs walk2_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: walk2_rom
+[Thu Dec 12 18:08:43 2024] Launched walk2_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/walk2_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_rom/walk2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 18:10:02 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 18:10:02 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 3393.129 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 730 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Common 17-344] 'open_run' was cancelled
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/walk1_back/walk1_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/walk1_back/walk1_back.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name walk1_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/walk1_back/walk1_back.COE} \
+  CONFIG.Component_Name {walk1_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips walk1_back_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'walk1_back_rom' to 'walk1_back_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/walk1_back/walk1_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/walk1_back/walk1_back.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk1_back_rom/walk1_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'walk1_back_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk1_back_rom/walk1_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'walk1_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'walk1_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'walk1_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'walk1_back_rom'...
+catch { config_ip_cache -export [get_ips -all walk1_back_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: walk1_back_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk1_back_rom/walk1_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk1_back_rom/walk1_back_rom.xci]
+launch_runs walk1_back_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: walk1_back_rom
+[Thu Dec 12 20:22:23 2024] Launched walk1_back_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/walk1_back_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk1_back_rom/walk1_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/run1_back/run1_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/run1_back/run1_back.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name run1_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/run1_back/run1_back.COE} \
+  CONFIG.Component_Name {run1_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips run1_back_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'run1_back_rom' to 'run1_back_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/run1_back/run1_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/run1_back/run1_back.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run1_back_rom/run1_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'run1_back_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run1_back_rom/run1_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'run1_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'run1_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'run1_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'run1_back_rom'...
+catch { config_ip_cache -export [get_ips -all run1_back_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: run1_back_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run1_back_rom/run1_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run1_back_rom/run1_back_rom.xci]
+launch_runs run1_back_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: run1_back_rom
+[Thu Dec 12 20:23:20 2024] Launched run1_back_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/run1_back_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run1_back_rom/run1_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/runf1_back/runf1_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/runf1_back/runf1_back.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name runf1_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/runf1_back/runf1_back.COE} \
+  CONFIG.Component_Name {runf1_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips runf1_back_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'runf1_back_rom' to 'runf1_back_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/runf1_back/runf1_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/runf1_back/runf1_back.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf1_back_rom/runf1_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'runf1_back_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf1_back_rom/runf1_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'runf1_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'runf1_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'runf1_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'runf1_back_rom'...
+catch { config_ip_cache -export [get_ips -all runf1_back_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: runf1_back_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf1_back_rom/runf1_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf1_back_rom/runf1_back_rom.xci]
+launch_runs runf1_back_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: runf1_back_rom
+[Thu Dec 12 20:24:14 2024] Launched runf1_back_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/runf1_back_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf1_back_rom/runf1_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/walk1_back/walk1_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/walk1_back/walk1_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf1_back/runf1_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run1_back/run1_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf1_back/runf1_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run1_back/run1_back_example.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 20:40:22 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 20:40:22 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/walk2_back/walk2_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/walk2_back/walk2_back.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name walk2_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/walk2_back/walk2_back.COE} \
+  CONFIG.Component_Name {walk2_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips walk2_back_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'walk2_back_rom' to 'walk2_back_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/walk2_back/walk2_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/walk2_back/walk2_back.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_back_rom/walk2_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'walk2_back_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_back_rom/walk2_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'walk2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'walk2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'walk2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'walk2_back_rom'...
+catch { config_ip_cache -export [get_ips -all walk2_back_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: walk2_back_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_back_rom/walk2_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_back_rom/walk2_back_rom.xci]
+launch_runs walk2_back_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: walk2_back_rom
+[Thu Dec 12 20:48:15 2024] Launched walk2_back_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/walk2_back_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/walk2_back_rom/walk2_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/run2_back/run2_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/run2_back/run2_back.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name run2_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/run2_back/run2_back.COE} \
+  CONFIG.Component_Name {run2_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips run2_back_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'run2_back_rom' to 'run2_back_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/run2_back/run2_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/run2_back/run2_back.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_back_rom/run2_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'run2_back_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_back_rom/run2_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'run2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'run2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'run2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'run2_back_rom'...
+catch { config_ip_cache -export [get_ips -all run2_back_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: run2_back_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_back_rom/run2_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_back_rom/run2_back_rom.xci]
+launch_runs run2_back_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: run2_back_rom
+[Thu Dec 12 20:50:09 2024] Launched run2_back_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/run2_back_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/run2_back_rom/run2_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/runf2_back/runf2_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/runf2_back/runf2_back.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name runf2_back_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/runf2_back/runf2_back.COE} \
+  CONFIG.Component_Name {runf2_back_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips runf2_back_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'runf2_back_rom' to 'runf2_back_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/runf2_back/runf2_back.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/runf2_back/runf2_back.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_back_rom/runf2_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'runf2_back_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_back_rom/runf2_back_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'runf2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'runf2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'runf2_back_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'runf2_back_rom'...
+catch { config_ip_cache -export [get_ips -all runf2_back_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: runf2_back_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_back_rom/runf2_back_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_back_rom/runf2_back_rom.xci]
+launch_runs runf2_back_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: runf2_back_rom
+[Thu Dec 12 20:51:26 2024] Launched runf2_back_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/runf2_back_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/runf2_back_rom/runf2_back_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/walk2_back/walk2_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/walk2_back/walk2_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf2_back/runf2_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/runf2_back/runf2_back_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run2_back/run2_back_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/run2_back/run2_back_palette.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 21:05:33 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 21:05:33 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump1_1/jump1_1.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump1_1/jump1_1.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump1_1_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_1/jump1_1.COE} \
+  CONFIG.Component_Name {jump1_1_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump1_1_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'jump1_1_rom' to 'jump1_1_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump1_1/jump1_1.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump1_1/jump1_1.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_1_rom/jump1_1_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'jump1_1_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_1_rom/jump1_1_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'jump1_1_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'jump1_1_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'jump1_1_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'jump1_1_rom'...
+catch { config_ip_cache -export [get_ips -all jump1_1_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump1_1_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_1_rom/jump1_1_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_1_rom/jump1_1_rom.xci]
+launch_runs jump1_1_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump1_1_rom
+[Thu Dec 12 22:45:40 2024] Launched jump1_1_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/jump1_1_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_1_rom/jump1_1_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_1/jump1_1_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_1/jump1_1_palette.sv}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump1_2/jump1_2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump1_2/jump1_2.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump1_2_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_2/jump1_2.COE} \
+  CONFIG.Component_Name {jump1_2_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump1_2_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'jump1_2_rom' to 'jump1_2_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump1_2/jump1_2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump1_2/jump1_2.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_2_rom/jump1_2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'jump1_2_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_2_rom/jump1_2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'jump1_2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'jump1_2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'jump1_2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'jump1_2_rom'...
+catch { config_ip_cache -export [get_ips -all jump1_2_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump1_2_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_2_rom/jump1_2_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_2_rom/jump1_2_rom.xci]
+launch_runs jump1_2_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump1_2_rom
+[Thu Dec 12 22:46:33 2024] Launched jump1_2_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/jump1_2_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_2_rom/jump1_2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_2/jump1_2_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_2/jump1_2_palette.sv}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump1_3/jump1_3.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump1_3/jump1_3.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump1_3_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_3/jump1_3.COE} \
+  CONFIG.Component_Name {jump1_3_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {4000} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump1_3_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'jump1_3_rom' to 'jump1_3_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump1_3/jump1_3.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump1_3/jump1_3.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_3_rom/jump1_3_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'jump1_3_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_3_rom/jump1_3_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'jump1_3_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'jump1_3_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'jump1_3_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'jump1_3_rom'...
+catch { config_ip_cache -export [get_ips -all jump1_3_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump1_3_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_3_rom/jump1_3_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_3_rom/jump1_3_rom.xci]
+launch_runs jump1_3_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump1_3_rom
+[Thu Dec 12 22:47:32 2024] Launched jump1_3_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/jump1_3_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump1_3_rom/jump1_3_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_3/jump1_3_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump1_3/jump1_3_example.sv}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump2_1/jump2_1.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump2_1/jump2_1.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump2_1_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_1/jump2_1.COE} \
+  CONFIG.Component_Name {jump2_1_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump2_1_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'jump2_1_rom' to 'jump2_1_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump2_1/jump2_1.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump2_1/jump2_1.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_1_rom/jump2_1_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'jump2_1_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_1_rom/jump2_1_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'jump2_1_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'jump2_1_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'jump2_1_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'jump2_1_rom'...
+catch { config_ip_cache -export [get_ips -all jump2_1_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump2_1_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_1_rom/jump2_1_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_1_rom/jump2_1_rom.xci]
+launch_runs jump2_1_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump2_1_rom
+[Thu Dec 12 22:48:41 2024] Launched jump2_1_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/jump2_1_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_1_rom/jump2_1_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_1/jump2_1_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_1/jump2_1_palette.sv}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump2_2/jump2_2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump2_2/jump2_2.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump2_2_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_2/jump2_2.COE} \
+  CONFIG.Component_Name {jump2_2_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump2_2_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'jump2_2_rom' to 'jump2_2_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump2_2/jump2_2.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump2_2/jump2_2.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_2_rom/jump2_2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'jump2_2_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_2_rom/jump2_2_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'jump2_2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'jump2_2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'jump2_2_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'jump2_2_rom'...
+catch { config_ip_cache -export [get_ips -all jump2_2_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump2_2_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_2_rom/jump2_2_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_2_rom/jump2_2_rom.xci]
+launch_runs jump2_2_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump2_2_rom
+[Thu Dec 12 22:49:30 2024] Launched jump2_2_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/jump2_2_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_2_rom/jump2_2_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_2/jump2_2_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_2/jump2_2_example.sv}
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump2_3/jump2_3.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump2_3/jump2_3.COE'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name jump2_3_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_3/jump2_3.COE} \
+  CONFIG.Component_Name {jump2_3_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {3969} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips jump2_3_rom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'jump2_3_rom' to 'jump2_3_rom' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/f2663/Desktop/385final/Image_to_COE/jump2_3/jump2_3.COE' provided. It will be converted relative to IP Instance files '../../../../../Image_to_COE/jump2_3/jump2_3.COE'
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_3_rom/jump2_3_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'jump2_3_rom'...
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_3_rom/jump2_3_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'jump2_3_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'jump2_3_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'jump2_3_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'jump2_3_rom'...
+catch { config_ip_cache -export [get_ips -all jump2_3_rom] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump2_3_rom
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_3_rom/jump2_3_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_3_rom/jump2_3_rom.xci]
+launch_runs jump2_3_rom_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: jump2_3_rom
+[Thu Dec 12 22:50:39 2024] Launched jump2_3_rom_synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/jump2_3_rom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/jump2_3_rom/jump2_3_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+import_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_3/jump2_3_example.sv C:/Users/f2663/Desktop/385final/Image_to_COE/jump2_3/jump2_3_palette.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 23:13:14 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 23:13:14 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 23:24:21 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 23:24:21 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/f2663/Desktop/385final/final/final.srcs/utils_1/imports/synth_1/mb_intro_top.dcp with file C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 12 23:40:28 2024] Launched synth_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/synth_1/runme.log
+[Thu Dec 12 23:40:28 2024] Launched impl_1...
+Run output will be captured here: C:/Users/f2663/Desktop/385final/final/final.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 23:48:42 2024...

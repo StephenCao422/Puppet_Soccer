@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../final.gen/sources_1/ip/jump1_2_rom/sim/jump1_2_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

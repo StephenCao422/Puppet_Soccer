@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../final.gen/sources_1/ip/runf_rom/sim/runf_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

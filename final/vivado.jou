@@ -1,0 +1,225 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Dec 13 23:17:01 2024
+# Process ID: 30076
+# Current directory: C:/Users/f2663/Desktop/385final/final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4376 C:\Users\f2663\Desktop\385final\final\final.xpr
+# Log file: C:/Users/f2663/Desktop/385final/final/vivado.log
+# Journal file: C:/Users/f2663/Desktop/385final/final\vivado.jou
+# Running On: stephencao, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16780 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/f2663/Desktop/385final/final/final.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/game_data.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/game_data.sv
+close [ open C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/game_data.sv w ]
+add_files C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/game_data.sv
+set_property file_type {Verilog Header} [get_files  C:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/new/game_data.sv]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name ball_rom
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/f2663/Desktop/385final/Image_to_COE/ball/ball.COE} \
+  CONFIG.Component_Name {ball_rom} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {6400} \
+  CONFIG.Write_Width_A {3} \
+] [get_ips ball_rom]
+generate_target {instantiation_template} [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/ball_rom/ball_rom.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/ball_rom/ball_rom.xci]
+catch { config_ip_cache -export [get_ips -all ball_rom] }
+export_ip_user_files -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/ball_rom/ball_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/ball_rom/ball_rom.xci]
+launch_runs ball_rom_synth_1 -jobs 8
+wait_on_run ball_rom_synth_1
+export_simulation -of_objects [get_files c:/Users/f2663/Desktop/385final/final/final.srcs/sources_1/ip/ball_rom/ball_rom.xci] -directory C:/Users/f2663/Desktop/385final/final/final.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files -ipstatic_source_dir C:/Users/f2663/Desktop/385final/final/final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/modelsim} {questa=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/questa} {riviera=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/riviera} {activehdl=C:/Users/f2663/Desktop/385final/final/final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+add_files -norecurse {C:/Users/f2663/Desktop/385final/Image_to_COE/ball/ball_palette.sv C:/Users/f2663/Desktop/385final/Image_to_COE/ball/ball_example.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+add_files -norecurse C:/Users/f2663/Desktop/ball.sv
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/f2663/Desktop/385final/final/mb_usb_hdmi_top.xsa
